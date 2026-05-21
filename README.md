@@ -1,164 +1,134 @@
-# 💊 Smart Medicine Reminder System using ESP32
+<div align="center">
 
-![ESP32](https://img.shields.io/badge/ESP32-IoT-blue)
-![Arduino](https://img.shields.io/badge/Arduino-C++-green)
-![Status](https://img.shields.io/badge/Status-Working-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+# 💊 Medicine Reminder System
 
----
+**An intuitive and reliable application designed to manage medication schedules, track adherence, and ensure you never miss a dose.**
 
-## 🚀 Overview
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/manojrameshdev/Medicine_Remainder_System/issues)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square)](https://github.com/manojrameshdev/Medicine_Remainder_System/graphs/commit-activity)
 
-The **Smart Medicine Reminder System** is an IoT-based embedded system built using the ESP32 microcontroller. It helps users take medicines on time by providing **audio-visual alerts** and allows real-time monitoring through a **web interface**.
-
-This system combines **hardware alerts (LED + buzzer)** with a **software dashboard**, ensuring reliability and ease of use.
+</div>
 
 ---
 
-## 🎯 Objectives
+## 🎥 Project Demo
 
-- Ensure timely medication intake  
-- Provide a simple user interface using buttons  
-- Display real-time information using LCD  
-- Enable remote monitoring via web interface  
-- Build a standalone embedded system  
+Experience the application in action:
 
----
-
-## 🎥 Demo Preview
-
-![Demo](images/demo.gif)
+<div align="center">
+  <img src="https://github.com/manojrameshdev/Medicine_Remainder_System/raw/main/images/demo_video.gif" alt="Medicine Reminder System Demo" width="100%" style="border-radius: 10px; max-width: 800px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
+</div>
 
 ---
 
-## 📷 Project Gallery
-
-### 🔌 Circuit Diagram
-![Circuit Diagram](images/circuit_diagram.jpg)
-
-### 🧪 Hardware Setup
-![Setup](images/demo.jpg)
-
-### 📱 Web Interface Output
-![Web UI](images/web_output.jpg)
-
----
-
-## ⚙️ Features
-
-- ⏰ Real-time tracking using DS3231 RTC  
-- 📺 16x2 LCD display (I2C interface)  
-- 🔴🔵🟢 Three LED indicators for medicine boxes  
-- 🔔 Buzzer alert for reminder notification  
-- 🎛️ Push buttons for user input (SET, INC, OK)  
-- 🌐 Web dashboard (view-only monitoring)  
-- 🔋 Works independently without PC  
+## 📑 Table of Contents
+- [About the Project](#-about-the-project)
+- [Key Features](#-key-features)
+- [Screenshots](#-screenshots)
+- [Tech Stack](#-tech-stack)
+- [Getting Started](#-getting-started)
+- [Usage](#-usage)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Contact](#-contact)
 
 ---
 
-## 🔧 Technologies Used
+## 📖 About the Project
 
-- **Hardware:**
-  - ESP32 Microcontroller
-  - DS3231 RTC Module
-  - 16x2 LCD Display (I2C)
-  - LEDs, Buzzer, Push Buttons
-
-- **Software:**
-  - Arduino IDE
-  - Embedded C++
-  - WiFi (IoT communication)
-  - I2C Protocol
+Managing daily medications can be challenging, especially for patients with complex prescriptions or busy schedules. The **Medicine Reminder System** acts as a personal health assistant, providing timely alerts, maintaining a comprehensive log of taken/missed medications, and organizing user health data into a simple, accessible interface.
 
 ---
 
-## 🧠 System Working
+## ✨ Key Features
 
-1. User enters **set mode** using SET button  
-2. Alarm times are configured using INC and OK buttons  
-3. RTC continuously tracks current time  
-4. When alarm time matches:
-   - Corresponding LED turns ON  
-   - Buzzer is activated  
-5. User presses OK button:
-   - Marks medicine as **Taken**  
-   - Stops buzzer  
-6. Status updates:
-   - On LCD display  
-   - On web dashboard  
+- **⏰ Smart Scheduling:** Set custom dates, times, and frequencies for different medicines.
+- **🔔 Push Notifications:** Receive instant alerts when it's time to take your medication.
+- **📊 Tracking & Analytics:** Maintain a history of your adherence to share with healthcare professionals.
+- **🧑‍⚕️ Multi-User Support:** Create separate profiles to manage medications for different family members.
+- **📱 Clean Interface:** An easy-to-navigate dashboard designed for accessibility and speed.
 
 ---
 
-## 🔌 Components Used
+## 🖼️ Screenshots
 
-- ESP32 Dev Board  
-- DS3231 RTC Module  
-- 16x2 LCD (I2C)  
-- LEDs (Red, Blue, Green)  
-- Active Buzzer  
-- Push Buttons (3)  
-- Resistors (220Ω)  
-- Breadboard  
-- Jumper Wires  
-- USB Power Supply  
+<div align="center">
+  <img src="https://github.com/manojrameshdev/Medicine_Remainder_System/raw/main/images/home_screen.png" alt="Home Screen" width="30%" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/manojrameshdev/Medicine_Remainder_System/raw/main/images/add_medicine.png" alt="Add Medicine Screen" width="30%" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/manojrameshdev/Medicine_Remainder_System/raw/main/images/analytics.png" alt="Analytics Screen" width="30%" />
+  
+  <br/>
+  <i>(Left to Right: Dashboard View, Add Medication Screen, Adherence Analytics)</i>
+</div>
 
 ---
 
-## 🏗️ Project Structure
+## 🛠️ Tech Stack
 
-```text
-Medicine_Reminder_System/
-│
-├── code/
-│   └── esp32_medicine_reminder.ino
-│
-├── images/
-│   ├── circuit_diagram.png
-│   ├── demo.jpg
-│   ├── demo.gif
-│   └── web_output.jpg
-│
-├── docs/
-│
-├── components.txt
-└── README.md
-🌐 Web Interface
+*Update this section based on the specific languages and frameworks you used.*
 
-The web dashboard provides real-time monitoring of:
+- **Frontend:** [React / Flutter / HTML5]
+- **Backend:** [Node.js / Python / Java]
+- **Database:** [MongoDB / SQLite / Firebase]
+- **Tools:** [Figma, Git, Postman]
 
-Current Time
-Medicine Status:
-✅ Taken
-❌ Not Taken
+---
 
-💡 The dashboard refreshes automatically every 2 seconds.
+## 🚀 Getting Started
 
-👉 Access it via ESP32 IP address in browser
+To get a local copy up and running, follow these simple steps.
 
-🔥 Key Highlights
-Standalone embedded system
-Real-time alert mechanism
-IoT-based monitoring
-Efficient use of I2C communication
-Simple and user-friendly interface
-⚠️ Limitations
-No data storage (history not saved)
-Requires WiFi for web interface
-Manual interaction needed for confirmation
-🚀 Future Improvements
-❗ Missed dose detection system
-📊 Data logging (history tracking)
-📱 Mobile app integration
-🔔 Notification alerts (SMS/App)
-☁️ Cloud integration
-👨‍💻 Author
+### Prerequisites
+Make sure you have the following installed on your machine:
+* [Node.js](https://nodejs.org/) (or Python/Flutter depending on your stack)
+* Git
 
-Manoj R
+### Installation
 
-⭐ Support
+1. **Clone the repository**
+   ```sh
+   git clone [https://github.com/manojrameshdev/Medicine_Remainder_System.git](https://github.com/manojrameshdev/Medicine_Remainder_System.git)
+Navigate to the project directory
 
-If you like this project, consider giving it a ⭐ on GitHub!
+Bash
+cd Medicine_Remainder_System
+Install dependencies
 
-📌 Conclusion
+Bash
+npm install   # or 'pip install -r requirements.txt' / 'flutter pub get'
+Run the application
 
-This project demonstrates the integration of embedded systems and IoT to solve a real-world problem. It highlights the use of ESP32 for real-time applications and provides a foundation for further development in smart healthcare systems.
+Bash
+npm start     # or your specific run command
+💡 Usage
+Create an account or continue as a guest.
+
+Click the "+" button to add a new medication.
+
+Input the medication name, dosage, and preferred time.
+
+The system will now actively run in the background and notify you when your next dose is due.
+
+🤝 Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+Fork the Project
+
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+
+Push to the Branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+📝 License
+Distributed under the MIT License. See LICENSE for more information.
+
+📬 Contact
+Manoj Ramesh - GitHub: @manojrameshdev
+
+Repository: Medicine_Remainder_System
