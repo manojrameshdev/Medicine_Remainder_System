@@ -122,7 +122,9 @@ Open the Serial Monitor to find the generated local IP address (e.g., 10.55.93.1
 Distributed under the MIT License. See LICENSE for more information.
 
 📬 Contact
+
 Manoj Ramesh - GitHub: @manojrameshdev
+
 Repository: Medicine_Remainder_System
 
 Repository: Medicine_Remainder_System
