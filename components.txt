@@ -1,0 +1,10 @@
+ESP32 Dev Board
+DS3231 RTC Module
+16x2 LCD with I2C
+Active Buzzer (SEM 1201)
+LEDs (Red, Blue, Green)
+Push Buttons (3)
+Resistors (220Ω)
+Breadboard
+Jumper Wires
+USB Cable
