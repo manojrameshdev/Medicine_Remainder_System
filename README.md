@@ -1,12 +1,11 @@
 <div align="center">
 
-# 💊 Medicine Reminder System
+#  IoT Medicine Reminder System
 
-**An intuitive and reliable application designed to manage medication schedules, track adherence, and ensure you never miss a dose.**
+**A hardware-software integrated solution designed to track medication schedules in real-time using physical smart boxes and a synchronized web dashboard.**
 
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/manojrameshdev/Medicine_Remainder_System/issues)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square)](https://github.com/manojrameshdev/Medicine_Remainder_System/graphs/commit-activity)
 
 </div>
 
@@ -14,10 +13,8 @@
 
 ## 🎥 Project Demo
 
-Experience the application in action:
-
 <div align="center">
-  <img src="https://github.com/manojrameshdev/Medicine_Remainder_System/raw/main/images/demo_video.gif" alt="Medicine Reminder System Demo" width="100%" style="border-radius: 10px; max-width: 800px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
+  <img src="https://raw.githubusercontent.com/manojrameshdev/Medicine_Remainder_System/main/images/demo_video.gif" alt="Medicine Reminder System Demo" width="100%" style="border-radius: 10px; max-width: 800px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
 </div>
 
 ---
@@ -25,11 +22,10 @@ Experience the application in action:
 ## 📑 Table of Contents
 - [About the Project](#-about-the-project)
 - [Key Features](#-key-features)
-- [Screenshots](#-screenshots)
+- [Hardware & Software Showcase](#-hardware--software-showcase)
 - [Tech Stack](#-tech-stack)
 - [Getting Started](#-getting-started)
-- [Usage](#-usage)
-- [Contributing](#-contributing)
+- [Future Enhancements](#-future-enhancements)
 - [License](#-license)
 - [Contact](#-contact)
 
@@ -37,98 +33,96 @@ Experience the application in action:
 
 ## 📖 About the Project
 
-Managing daily medications can be challenging, especially for patients with complex prescriptions or busy schedules. The **Medicine Reminder System** acts as a personal health assistant, providing timely alerts, maintaining a comprehensive log of taken/missed medications, and organizing user health data into a simple, accessible interface.
+Managing daily medications is critical for health, but keeping track of physical pillboxes can be difficult. This project bridges the gap between physical hardware and digital tracking. By utilizing a microcontroller setup, the system monitors specific medicine boxes (Box 1, Box 2, Box 3) and updates a locally hosted web interface in real-time. 
+
+Users can check their smartphone or laptop to see a live countdown timer and the current "Taken" or "Not Taken" status of their medications.
 
 ---
 
 ## ✨ Key Features
 
-- **⏰ Smart Scheduling:** Set custom dates, times, and frequencies for different medicines.
-- **🔔 Push Notifications:** Receive instant alerts when it's time to take your medication.
-- **📊 Tracking & Analytics:** Maintain a history of your adherence to share with healthcare professionals.
-- **🧑‍⚕️ Multi-User Support:** Create separate profiles to manage medications for different family members.
-- **📱 Clean Interface:** An easy-to-navigate dashboard designed for accessibility and speed.
+- **🔌 IoT Integration:** Connects physical breadboard/microcontroller hardware to a live web server.
+- **⏱️ Real-Time Syncing:** Actions taken on the physical boxes instantly update the web dashboard across all connected devices.
+- **📱 Responsive Web Interface:** The dashboard is fully responsive, ensuring a clean and accessible view on both mobile phones and desktop monitors.
+- **🚦 Status Tracking:** Clear visual indicators for each medicine slot (e.g., Box 1, Box 2) showing if the dose is pending or completed.
+- **🌐 Local Network Hosting:** Runs securely on a local IP address for fast, localized access without requiring external internet routing.
 
 ---
 
-## 🖼️ Screenshots
+## 🖼️ Hardware & Software Showcase
 
 <div align="center">
-  <img src="https://github.com/manojrameshdev/Medicine_Remainder_System/raw/main/images/home_screen.png" alt="Home Screen" width="30%" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/manojrameshdev/Medicine_Remainder_System/raw/main/images/add_medicine.png" alt="Add Medicine Screen" width="30%" />
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/manojrameshdev/Medicine_Remainder_System/raw/main/images/analytics.png" alt="Analytics Screen" width="30%" />
+  
+  <img src="https://raw.githubusercontent.com/manojrameshdev/Medicine_Remainder_System/main/images/demo_2.jpeg" alt="Hardware Setup and Desktop View" width="48%" />
+  &nbsp;
+  <img src="https://raw.githubusercontent.com/manojrameshdev/Medicine_Remainder_System/main/images/web_output.jpeg" alt="Mobile Dashboard View" width="22%" style="vertical-align: top;" />
   
   <br/>
-  <i>(Left to Right: Dashboard View, Add Medication Screen, Adherence Analytics)</i>
+  <i>(Left: Physical microcontroller setup syncing with the desktop interface. Right: Responsive mobile web dashboard.)</i>
 </div>
 
 ---
 
 ## 🛠️ Tech Stack
 
-*Update this section based on the specific languages and frameworks you used.*
+*Update the hardware components below based on your exact breadboard setup.*
 
-- **Frontend:** [React / Flutter / HTML5]
-- **Backend:** [Node.js / Python / Java]
-- **Database:** [MongoDB / SQLite / Firebase]
-- **Tools:** [Figma, Git, Postman]
+**Hardware:**
+- Microcontroller (e.g., NodeMCU ESP8266 / ESP32 / Arduino)
+- Breadboard & Jumper Wires
+- Sensors/Buttons (for detecting box interaction)
+- LEDs / Buzzers (for physical alerts)
+
+**Software & Web:**
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** C++ (Arduino IDE) / Python 
+- **Networking:** Local WiFi Web Server (via Microcontroller)
 
 ---
 
 ## 🚀 Getting Started
 
-To get a local copy up and running, follow these simple steps.
+To replicate this setup on your local network:
 
 ### Prerequisites
-Make sure you have the following installed on your machine:
-* [Node.js](https://nodejs.org/) (or Python/Flutter depending on your stack)
-* Git
+* Arduino IDE (or VS Code with PlatformIO)
+* ESP8266/ESP32 board manager installed
+* Necessary hardware components listed above
 
-### Installation
+### Installation & Setup
 
 1. **Clone the repository**
    ```sh
    git clone [https://github.com/manojrameshdev/Medicine_Remainder_System.git](https://github.com/manojrameshdev/Medicine_Remainder_System.git)
-Navigate to the project directory
+Open the hardware code
+Navigate to the hardware folder and open the .ino or .cpp file in your Arduino IDE.
 
-Bash
-cd Medicine_Remainder_System
-Install dependencies
+Configure WiFi Credentials
+Update the code with your local WiFi SSID and PASSWORD.
 
-Bash
-npm install   # or 'pip install -r requirements.txt' / 'flutter pub get'
-Run the application
+C++
+const char* ssid = "YOUR_WIFI_SSID";
+const char* password = "YOUR_WIFI_PASSWORD";
+Flash the Microcontroller
+Connect your board via USB and upload the code.
 
-Bash
-npm start     # or your specific run command
-💡 Usage
-Create an account or continue as a guest.
+Access the Dashboard
+Open the Serial Monitor to find the generated local IP address (e.g., 10.55.93.18), and type it into any web browser on the same network.
 
-Click the "+" button to add a new medication.
+🔮 Future Enhancements
+1. Add cloud database integration (like Firebase) for remote monitoring.
 
-Input the medication name, dosage, and preferred time.
+2. Implement user authentication for secure access.
 
-The system will now actively run in the background and notify you when your next dose is due.
+3. Add historical data logging to track adherence over weeks/months.
 
-🤝 Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-Fork the Project
-
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-
-Push to the Branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
+4. Integrate SMS or email push notifications.
 
 📝 License
 Distributed under the MIT License. See LICENSE for more information.
 
 📬 Contact
 Manoj Ramesh - GitHub: @manojrameshdev
+Repository: Medicine_Remainder_System
 
 Repository: Medicine_Remainder_System
