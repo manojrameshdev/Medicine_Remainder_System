@@ -34,7 +34,7 @@ This system combines **hardware alerts (LED + buzzer)** with a **software dashbo
 ## 📷 Project Gallery
 
 ### 🔌 Circuit Diagram
-![Circuit Diagram](images/circuit_diagram.png)
+![Circuit Diagram](images/circuit_diagram.jpg)
 
 ### 🧪 Hardware Setup
 ![Setup](images/demo.jpg)
