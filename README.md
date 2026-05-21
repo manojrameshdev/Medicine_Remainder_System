@@ -11,7 +11,7 @@
 
 ---
 
-## 🎥 Project Demo
+## Project Demo
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/manojrameshdev/Medicine_Remainder_System/main/images/demo_video.gif" alt="Medicine Reminder System Demo" width="100%" style="border-radius: 10px; max-width: 800px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
@@ -19,7 +19,7 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 - [About the Project](#-about-the-project)
 - [Key Features](#-key-features)
 - [Hardware & Software Showcase](#-hardware--software-showcase)
@@ -31,7 +31,7 @@
 
 ---
 
-## 📖 About the Project
+## About the Project
 
 Managing daily medications is critical for health, but keeping track of physical pillboxes can be difficult. This project bridges the gap between physical hardware and digital tracking. By utilizing a microcontroller setup, the system monitors specific medicine boxes (Box 1, Box 2, Box 3) and updates a locally hosted web interface in real-time. 
 
@@ -39,17 +39,17 @@ Users can check their smartphone or laptop to see a live countdown timer and the
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- **🔌 IoT Integration:** Connects physical breadboard/microcontroller hardware to a live web server.
-- **⏱️ Real-Time Syncing:** Actions taken on the physical boxes instantly update the web dashboard across all connected devices.
-- **📱 Responsive Web Interface:** The dashboard is fully responsive, ensuring a clean and accessible view on both mobile phones and desktop monitors.
-- **🚦 Status Tracking:** Clear visual indicators for each medicine slot (e.g., Box 1, Box 2) showing if the dose is pending or completed.
-- **🌐 Local Network Hosting:** Runs securely on a local IP address for fast, localized access without requiring external internet routing.
+- ** IoT Integration:** Connects physical breadboard/microcontroller hardware to a live web server.
+- ** Real-Time Syncing:** Actions taken on the physical boxes instantly update the web dashboard across all connected devices.
+- ** Responsive Web Interface:** The dashboard is fully responsive, ensuring a clean and accessible view on both mobile phones and desktop monitors.
+- ** Status Tracking:** Clear visual indicators for each medicine slot (e.g., Box 1, Box 2) showing if the dose is pending or completed.
+- ** Local Network Hosting:** Runs securely on a local IP address for fast, localized access without requiring external internet routing.
 
 ---
 
-## 🖼️ Hardware & Software Showcase
+## Hardware & Software Showcase
 
 <div align="center">
   
@@ -63,7 +63,7 @@ Users can check their smartphone or laptop to see a live countdown timer and the
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 *Update the hardware components below based on your exact breadboard setup.*
 
@@ -80,7 +80,7 @@ Users can check their smartphone or laptop to see a live countdown timer and the
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 To replicate this setup on your local network:
 
@@ -109,7 +109,7 @@ Connect your board via USB and upload the code.
 Access the Dashboard
 Open the Serial Monitor to find the generated local IP address (e.g., 10.55.93.18), and type it into any web browser on the same network.
 
-🔮 Future Enhancements
+## Future Enhancements
 1. Add cloud database integration (like Firebase) for remote monitoring.
 
 2. Implement user authentication for secure access.
@@ -118,13 +118,15 @@ Open the Serial Monitor to find the generated local IP address (e.g., 10.55.93.1
 
 4. Integrate SMS or email push notifications.
 
-📝 License
-Distributed under the MIT License. See LICENSE for more information.
 
-📬 Contact
+## 👨‍💻 Author
 
-Manoj Ramesh - GitHub: @manojrameshdev
+<div align="center">
 
-Repository: Medicine_Remainder_System
+**Manoj Ramesh**
 
-Repository: Medicine_Remainder_System
+[![GitHub](https://img.shields.io/badge/GitHub-manojrameshdev-181717?style=for-the-badge&logo=github)](https://github.com/manojrameshdev)
+
+*Repository: Medicine_Remainder_System* 
+
+</div>
